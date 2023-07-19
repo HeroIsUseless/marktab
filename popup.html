@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <title>新标签页</title>
+    <meta charset="utf-8" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #main {
+            position: relative;
+            display: flex;
+            width: 206px;
+            height: 26px;
+            flex-wrap: wrap;
+        }
+    
+        #search-box {
+            position: absolute;
+            right: 3px;
+            top: 3px;
+            height: 20px;
+            width: 200px;
+            min-width: 200px;
+            background: none;
+            outline: none;
+            border: 1px solid lightgrey;
+            border-radius: 2px;
+        }
+
+        #search-img {
+            position: absolute;
+            right: 7px;
+            top: 5px;
+        }
+
+        #search-content {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 999;
+            background: white;
+            border: 1px solid lightgrey;
+            border-radius: 2px;
+        }
+
+        .search_item {
+            display: flex;
+            align-items: center;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        .search_item:hover {
+            background-color: lightgrey;
+        }
+
+        .item_title {
+            width: 165px;
+            margin: 3px;
+            margin-left: 2px;
+            margin-right: 7px;
+            white-space: nowrap; 
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .im {
+            height: 16px;
+            width: 16px;
+            border-radius: 16px;
+            margin: 3px;
+        }
+
+        a {
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+            color: grey;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <span id="main">
+        <input id="search-box" type="text"/>
+        <div id="search-content"> </div>
+        <img id="search-img" src="search.png" />
+</body>
+
+<script type="text/javascript" src="jquery-1.8.3.js"></script>
+<script type="text/javascript" src="popup.js"></script>
+
+</html>

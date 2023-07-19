@@ -1,0 +1,21 @@
+{
+    "name": "marktab",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "default_locale": "zh_CN",
+    "description": "bookmarks - new tab",
+    "permissions": ["bookmarks", "favicon"],
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "new tab",
+        "default_popup": "popup.html"
+    },
+    "chrome_url_overrides":
+    {
+        "newtab": "newtab.html"
+    },
+    "background":
+    {
+        "service_worker": "background.js"
+    }
+}

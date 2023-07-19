@@ -1,0 +1,15 @@
+{
+    "extName": {
+      "message": "插件名称",
+      "description": "描述"
+    },
+    "extDescription": {
+      "message": "插件描述",
+      "description": "描述2"
+    },
+  
+    "width": {
+      "message": "200px",
+      "description": "css width"
+    }
+  }
